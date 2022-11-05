@@ -5,7 +5,6 @@ Reference:
 - https://starcitizen.tools
 - https://robertsspaceindustries.com/pledge/
 
-A new Flutter project.
 
 ## Getting Started
 
