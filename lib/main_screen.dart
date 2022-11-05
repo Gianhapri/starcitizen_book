@@ -1,9 +1,16 @@
+import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:starcitizen_book/model/brand_manufacture.dart';
 import 'package:starcitizen_book/details.dart';
 
-class MainScreen extends StatelessWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class MainScreen extends StatefulWidget {
+  const MainScreen({super.key});
+
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +30,16 @@ class MainScreen extends StatelessWidget {
                 return const BrandGrid(gridCount: 6);
               }
             },
+          ),
+          bottomNavigationBar: FloatingNavbar(
+            onTap: (int val) {
+              //returns tab id which is user tapped
+            },
+            currentIndex: 0,
+            items: [
+              FloatingNavbarItem(icon: Icons.home, title: 'Home'),
+              FloatingNavbarItem(icon: Icons.person, title: 'About'),
+            ],
           ),
         );
       },
