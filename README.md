@@ -1,4 +1,9 @@
 # starcitizen_book
+This is flutter basic app without connect to internet, and add it manually
+
+Reference:
+- https://starcitizen.tools
+- https://robertsspaceindustries.com/pledge/
 
 A new Flutter project.
 
@@ -14,4 +19,3 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-# starcitizen_book
